@@ -1,0 +1,67 @@
+@use '../styles/variables' as *;
+
+.login-page {
+  max-width: 400px;
+  margin: 4rem auto;
+  padding: $spacer;
+  background: $card-bg;
+  border-radius: $radius;
+  box-shadow: $shadow-sm;
+  font-family: $font-stack;
+  color: $text;
+
+  h2 {
+    margin-bottom: $spacer-lg;
+    text-align: center;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: $spacer;
+
+    div {
+      display: flex;
+      flex-direction: column;
+
+      label {
+        margin-bottom: 4px;
+        font-weight: 600;
+      }
+
+      input {
+        @extend .input !optional;
+      }
+    }
+
+    button {
+      margin-top: $spacer;
+      background-color: $primary;
+      color: white;
+      font-weight: 600;
+      padding: 0.65rem;
+      border: none;
+      border-radius: $radius;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+
+      &:hover {
+        background-color: darken($primary, 10%);
+      }
+    }
+  }
+
+  .error {
+    margin-top: $spacer-sm;
+    color: $danger;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  .help-text {
+    margin-top: $spacer-sm;
+    font-size: 0.85rem;
+    color: $muted;
+    text-align: center;
+  }
+}

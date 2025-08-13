@@ -1,0 +1,132 @@
+{
+    "data": {
+        "clientes": [
+            {
+                "info": {
+                    "nomeCompleto": "Ana Beatriz",
+                    "detalhes": {
+                        "email": "ana.b@example.com",
+                        "nascimento": "1992-05-01"
+                    }
+                },
+                "estatisticas": {
+                    "vendas": [
+                        {
+                            "data": "2024-01-01",
+                            "valor": 150
+                        },
+                        {
+                            "data": "2024-01-02",
+                            "valor": 50
+                        }
+                    ]
+                }
+            },
+            {
+                "info": {
+                    "nomeCompleto": "Carlos Eduardo",
+                    "detalhes": {
+                        "email": "cadu@example.com",
+                        "nascimento": "1987-08-15"
+                    }
+                },
+                "duplicado": {
+                    "nomeCompleto": "Carlos Eduardo"
+                },
+                "estatisticas": {
+                    "vendas": []
+                }
+            },
+            {
+                "info": {
+                    "nomeCompleto": "Carlos Eduardo",
+                    "detalhes": {
+                        "email": "cadu@example.com",
+                        "nascimento": "1987-08-15"
+                    }
+                },
+                "estatisticas": {
+                    "vendas": [
+                        {
+                            "data": "2024-01-03",
+                            "valor": 200
+                        }
+                    ]
+                }
+            },
+            {
+                "info": {
+                    "nomeCompleto": "Maria Silva",
+                    "detalhes": {
+                        "email": "maria.silva@example.com",
+                        "nascimento": "1990-03-10"
+                    }
+                },
+                "estatisticas": {
+                    "vendas": [
+                        {
+                            "data": "2024-01-02",
+                            "valor": 100
+                        }
+                    ]
+                }
+            },
+            {
+                "nomeCompleto": "Maria Silva",
+                "detalhes": {
+                    "email": "maria.silva@example.com",
+                    "nascimento": "1990-03-10"
+                },
+                "estatisticas": {
+                    "vendas": [
+                        {
+                            "data": "2024-01-04",
+                            "valor": 300
+                        }
+                    ]
+                }
+            },
+            {
+                "info": {
+                    "nomeCompleto": "João Pereira",
+                    "detalhes": {
+                        "email": "joao.p@example.com",
+                        "nascimento": "1985-12-20"
+                    }
+                },
+                "estatisticas": {
+                    "vendas": [
+                        {
+                            "data": "2024-01-05",
+                            "valor": 250
+                        }
+                    ]
+                }
+            },
+            {
+                "info": {
+                    "nomeCompleto": "João Pereira",
+                    "detalhes": {
+                        "email": "",
+                        "nascimento": "1985-12-20"
+                    }
+                },
+                "estatisticas": {
+                    "vendas": [
+                        {
+                            "data": "2024-01-06",
+                            "valor": 50
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "meta": {
+        "registroTotal": 7,
+        "pagina": 1
+    },
+    "redundante": {
+        "status": "ok"
+    }
+}

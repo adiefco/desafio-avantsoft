@@ -1,0 +1,45 @@
+@use '../../styles/variables' as *;
+
+.client-list {
+  display: grid;
+  gap: 12px;
+}
+
+.client-card-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.client-info {
+  flex: 1;
+
+  .client-name {
+    font-weight: 600;
+    color: $text;
+  }
+
+  .client-contact {
+    font-size: 13px;
+    color: $muted;
+  }
+
+  .client-sales {
+    font-size: 13px;
+    color: $text;
+    margin-top: 6px;
+  }
+}
+
+.client-letter {
+  text-align: right;
+
+  > div {
+    font-size: 14px;
+    font-weight: 700;
+    background: #eee;
+    padding: 8px 12px;
+    border-radius: 8px;
+  }
+}

@@ -1,0 +1,10 @@
+@use '../../styles/variables' as *;
+
+.sales-chart-container {
+  height: 300px;
+  max-width: 100%;
+  background: $card-bg;
+  padding: $spacer;
+  border-radius: $radius;
+  box-shadow: $shadow-sm;
+}

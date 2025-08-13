@@ -1,0 +1,165 @@
+@use './reset' as *;
+
+// Container principal
+.app-container {
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: $spacer;
+  display: grid;
+  gap: $spacer-lg;
+
+  @media (max-width: 768px) {
+    padding: $spacer-sm;
+    margin: 1rem auto;
+  }
+}
+
+// Header
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: $spacer;
+
+  .title {
+    h1 {
+      font-size: 1.25rem;
+    }
+    .subtitle {
+      color: $muted;
+      font-size: 0.95rem;
+      margin-top: 2px;
+    }
+  }
+
+  .actions {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+
+    button {
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      border: none;
+      background-color: $primary;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+
+      &:hover {
+        background-color: darken($primary, 10%);
+      }
+
+      @media (max-width: 480px) {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.9rem;
+      }
+    }
+  }
+}
+
+// Grid principal (gráfico + painel de destaques)
+.top-grid {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 1rem;
+
+  @media (max-width: 880px) {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  @media (max-width: 480px) {
+    gap: 1rem;
+  }
+}
+
+// Inputs padrão
+.input {
+  display: inline-block;
+  padding: 0.55rem 0.65rem;
+  border-radius: 8px;
+  border: 1px solid rgba(15, 23, 42, 0.06);
+  background: white;
+  outline: none;
+  transition: box-shadow 0.12s ease, border-color 0.12s ease;
+
+  &:focus {
+    box-shadow: 0 0 0 3px rgba($primary, 0.08);
+    border-color: $primary;
+  }
+}
+
+// Botões globais
+.btn-ghost {
+  background: transparent;
+  border: 1px solid rgba(15, 23, 42, 0.06);
+  padding: 0.5rem 0.8rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+
+  &:hover {
+    background-color: rgba($primary, 0.1);
+  }
+}
+
+// Formulário adicionar cliente — responsivo
+.add-client-form {
+  display: flex;
+  gap: $spacer-sm;
+  align-items: center;
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+    align-items: stretch;
+
+    input,
+    button {
+      width: 100%;
+    }
+  }
+}
+
+// Lista de clientes
+.client-list {
+  display: grid;
+  gap: 12px;
+  padding: $spacer-sm;
+
+  > div {
+    border: 1px solid #ddd;
+    padding: $spacer;
+    border-radius: $radius;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: $card-bg;
+
+    @media (max-width: 600px) {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 8px;
+    }
+  }
+}
+
+// Painel de destaques
+.highlights-panel {
+  border: 1px solid #ddd;
+  padding: $spacer;
+  border-radius: $radius;
+  background: $card-bg;
+
+  > div {
+    margin-top: 8px;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  @media (max-width: 600px) {
+    font-size: 0.9rem;
+  }
+}

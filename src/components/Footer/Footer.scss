@@ -1,0 +1,21 @@
+.app-footer {
+    margin-top: 40px;
+    padding: 10px 0;
+    border-top: 1px solid #ddd;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666;
+  
+    &__link {
+      color: #4e73df;
+      text-decoration: none;
+      transition: color 0.2s ease;
+  
+      &:hover,
+      &:focus {
+        color: darken(#4e73df, 10%);
+        text-decoration: underline;
+      }
+    }
+  }
+  

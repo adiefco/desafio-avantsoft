@@ -35,17 +35,17 @@ Este projeto é um dashboard React para gerenciar clientes e suas vendas. Ele co
    git clone https://github.com/adiefco/desafio-avantsoft.git
    cd teste-avantsoft
 2. Instale as dependências
-  ```bash
-  npm install
+   ```bash
+   npm install
 3. Inicie o servidor fake da API (json-server):
-  ```bash
-  npm run start:api
+   ```bash
+   npm run start:api
 4. Inicie a aplicação React:
-  ```bash
-  npm run dev
+   ```bash
+   npm run dev
 5. Acesse no navegador:
-  ```bash
-  http://localhost:5173
+   ```bash
+   http://localhost:5173
 
 ---
 

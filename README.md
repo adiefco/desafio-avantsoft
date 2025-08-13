@@ -33,7 +33,7 @@ Este projeto é um dashboard React para gerenciar clientes e suas vendas. Ele co
 1. Clone o repositório:  
    ```bash
    git clone https://github.com/adiefco/desafio-avantsoft.git
-   cd teste-avantsoft
+   cd desafio-avantsoft
 2. Instale as dependências
    ```bash
    npm install

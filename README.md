@@ -61,6 +61,6 @@ Este projeto é um dashboard React para gerenciar clientes e suas vendas. Ele co
 
 ## Contato
 
-Desenvolvido por Adriana Evangelista.
-Site: https://adrianaevangelista.com
-Email: adiefco@gmail.com
+Desenvolvido por Adriana Evangelista.  
+Site: https://adrianaevangelista.com.  
+Email: adiefco@gmail.com.
